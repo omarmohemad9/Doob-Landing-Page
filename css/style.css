@@ -4,6 +4,9 @@
   --color-pharagraph: #c1bac5;
   --color-red: #ff3946;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 * {
   box-sizing: border-box;
@@ -183,13 +186,13 @@ header .contact span i {
   left: 23px;
 }
 
-header .contact button {
+header .contact a.contactBtn {
   cursor: pointer;
   padding: 10px 20px;
   color: var(--color-red);
   border-radius: 3px;
   background-color: white;
-  box-shadow: 1px 3px 9px #00000047;
+  box-shadow: 1px 3px 9px #00000014;
   outline: none;
   border: none;
   font-weight: bold;
@@ -197,6 +200,9 @@ header .contact button {
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
   -o-border-radius: 3px;
+  text-decoration: none;
+  display: block;
+  float: right;
 }
 @media (max-width: 768px) {
   header .contact button {
