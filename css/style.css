@@ -88,7 +88,6 @@ header img {
 
 header nav {
   flex-basis: 50%;
-  display: flex;
   margin-left: 50px;
 }
 @media (max-width: 768px) {
@@ -115,7 +114,14 @@ header .container nav .fa-bars {
     cursor: pointer;
   }
 }
-
+header nav .burger {
+  display: none;
+}
+@media (max-width: 768px) {
+  header nav .burger {
+    display: block;
+  }
+}
 header ul {
   display: flex;
   justify-content: flex-end;
@@ -158,6 +164,23 @@ header ul li {
   header ul li:hover {
     margin-left: 15px;
   }
+}
+header ul li a {
+  text-decoration: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  color: var(--color-red);
+  border-radius: 3px;
+  background-color: white;
+  box-shadow: 1px 3px 9px #00000014;
+  outline: none;
+  border: none;
+  font-weight: bold;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  text-decoration: none;
 }
 
 header .contact {
